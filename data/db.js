@@ -22,3 +22,5 @@ else {
 console.log("Connessione al db avvenuta correttamente")
 }
 });
+
+module.exports = connection;
