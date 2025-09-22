@@ -1,0 +1,16 @@
+// importo express e creo l'istanza dell'app
+const express = require('express');
+const app = express();
+
+// definisco il numero di porta su cui deve girare l'app
+const port = 3000;
+
+// definisco la rotta base
+app.get("/", (req, res) => {
+  res.send("Rotta base del mio blog")
+});
+
+// dico al server di restare in ascolto sulla porta 3000
+app.listen(port, () => {
+  console.log(`Server in ascolto sulla porta ${port}`)
+});
