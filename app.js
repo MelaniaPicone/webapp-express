@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 // definisco il numero di porta su cui deve girare l'app
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 
 // importiamo il router
 const movieRouter = require("./routers/movieRouter");
