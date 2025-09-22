@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 // definisco il numero di porta su cui deve girare l'app
-const port = 3000;
+const port = process.env.PORT;
 
 // definisco la rotta base
 app.get("/", (req, res) => {
