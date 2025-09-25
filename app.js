@@ -29,6 +29,9 @@ app.get("/", (req, res) => {
 // rotta per i film
 app.use("/api/movie", movieRouter);
 
+app.use(notFound);
+app.use(errorsHandler);
+
 // dico al server di restare in ascolto sulla porta 3000
 app.listen(port, () => {
   console.log(`Server in ascolto sulla porta ${port}`)
